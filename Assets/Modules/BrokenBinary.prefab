@@ -1624,7 +1624,6 @@ MonoBehaviour:
   - 
   - 
   word: 
-  word1: 
   red: {r: 1, g: 0, b: 0, a: 1}
   green: {r: 0.034482718, g: 1, b: 0, a: 1}
   stepcycle: -1
@@ -1639,40 +1638,47 @@ MonoBehaviour:
   shift: 0
   awaked: 0
   shifted: 0
-  WordList:
-  - GHOST
-  - GIANT
-  - ULTRA
-  - SUPER
-  - HYPER
-  - INDIA
-  - ALPHA
-  - SIMON
-  - STICK
-  - MARIO
-  - LUCKY
-  - DISCO
-  - BRAVO
+  Wordlist:
   - ABORT
   - ABOUT
+  - ALERT
+  - ALPHA
+  - ALTER
   - BLACK
+  - BASTE
   - BEAST
+  - BEATS
+  - BLOCK
+  - BRAVO
   - CLOCK
   - CLOSE
   - CHAIR
   - CRASH
+  - DEALT
   - DELTA
   - DIGIT
-  - DEMON
+  - DISCO
   - EIGHT
+  - EVENS
   - GAMMA
+  - GENRE
+  - GHOST
+  - GIANT
   - GLASS
+  - GOTHS
   - GREEN
   - GUESS
   - HOTEL
+  - HYPER
   - INDIA
   - KAPPA
   - LATER
+  - LEMON
+  - LUCKY
+  - MAGMA
+  - MARIO
+  - MELON
+  - MERIT
   - MONTH
   - MORSE
   - NORTH
@@ -1680,13 +1686,21 @@ MonoBehaviour:
   - OSCAR
   - PANIC
   - PRESS
+  - PURSE
   - ROMEO
   - SEVEN
+  - SHOUT
   - SIGMA
+  - SIMON
   - SMASH
   - SOUTH
+  - STICK
+  - SUPER
   - TANGO
+  - THORN
+  - TICKS
   - TIMER
+  - ULTRA
   - VOICE
   - WHILE
   - WHITE

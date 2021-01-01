@@ -48,7 +48,7 @@ public class BrokenBinary : MonoBehaviour
     public char shifted;
     Random rnd = new Random();
 
-    public string[] WordList = {
+    public string[] Wordlist = {
     "ABORT", "ABOUT", "ALERT", "ALPHA", "ALTER", "BLACK", "BASTE", "BEAST", "BEATS", "BLOCK", "BRAVO", "CLOCK", "CLOSE",
     "CHAIR", "CRASH", "DEALT", "DELTA", "DIGIT", "DISCO", "EIGHT", "EVENS", "GAMMA", "GENRE", "GHOST", "GIANT", "GLASS",
     "GOTHS", "GREEN", "GUESS", "HOTEL", "HYPER", "INDIA", "KAPPA", "LATER", "LEMON", "LUCKY", "MAGMA", "MARIO", "MELON",
@@ -68,7 +68,7 @@ public class BrokenBinary : MonoBehaviour
             
             _moduleID = _moduleIDCounter++;
             awaked = true;
-            word = WordList[Random.Range(0, 68)];
+            word = Wordlist[Random.Range(0, 68)];
             for (int i = 0; i < 5; i++)
             {
                 char c = word[i];
@@ -251,22 +251,22 @@ public class BrokenBinary : MonoBehaviour
             Slovo.text += input[i];
             yield return new WaitForSeconds(0.5f);
         }
-        if (WordList.Contains(input))
+        if (Wordlist.Contains(input))
         {
             if (input == word)
             {
-                Debug.LogFormat("[Broken Binary #{0}] Thats correct", _moduleID);
+                Debug.LogFormat("[Broken Binary #{0}] That's correct", _moduleID);
             }
             else
             {
-                Debug.LogFormat("[Broken Binary #{0}] That's a anagram word but still correct", _moduleID);
+                Debug.LogFormat("[Broken Binary #{0}] That's an anagram word but still correct", _moduleID);
             }
                 StartCoroutine(solved());
             
         }
-        else if (!WordList.Contains(input))
+        else if (!Wordlist.Contains(input))
         {
-            Debug.LogFormat("[Broken Binary #{0}] Thats incorrect", _moduleID);
+            Debug.LogFormat("[Broken Binary #{0}] That's incorrect", _moduleID);
             Slovo.color = red;
 
             Module.HandleStrike();
@@ -299,7 +299,7 @@ public class BrokenBinary : MonoBehaviour
             c5 = false;
             stepcycle = -1;
             Slovo.text = "";
-            word = WordList[Random.Range(0, 68)];
+            word = Wordlist[Random.Range(0, 68)];
 
             for (int i = 0; i < 5; i++)
             {
