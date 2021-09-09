@@ -335,6 +335,10 @@ public class BrokenBinary : MonoBehaviour
         var indices = new List<int>();
         foreach (var token in tokens)
         {
+            if (token.Length != 1 || token.EqualsAny("T", "R", "L", "M", "B")) yield break;
+        }
+        foreach (var token in tokens)
+        {
             yield return new WaitForSeconds(0.1f);
             switch (token.ToUpperInvariant())
             {
@@ -343,7 +347,7 @@ public class BrokenBinary : MonoBehaviour
                 case "M": B1.OnInteract(); break;
                 case "B": NotSend.OnInteract(); break;
                 case "T": Send.OnInteract(); break;
-                default: yield break;
+                default: break;
             }
         }
     }
@@ -360,7 +364,7 @@ public class BrokenBinary : MonoBehaviour
         Up.text = "";
         Bottom.text = "";
         cheater = true;
-        Debug.LogFormat("[Broken Binary #{0}] That module was autosolved. If you didn't use solve command, report about it.", _moduleID);
+        Debug.LogFormat("[Broken Binary #{0}] This module was autosolved. If you didn't use solve command, report about it.", _moduleID);
         StartCoroutine(solved());
         yield return null;
     }
