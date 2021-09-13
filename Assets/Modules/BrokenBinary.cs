@@ -331,11 +331,11 @@ public class BrokenBinary : MonoBehaviour
     public IEnumerator ProcessTwitchCommand(string command)
     {
         var tokens = command.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-        if (tokens.Length == 0 || tokens.Length >= 6) yield break;
+        if (tokens.Length == 0 || tokens.Length >= 6 - pressed) yield break;
         var indices = new List<int>();
         foreach (var token in tokens)
         {
-            if (token.Length != 1 || token.EqualsAny("T", "R", "L", "M", "B")) yield break;
+            if (token.Length != 1 || !token.EqualsAny("T", "R", "L", "M", "B")) yield break;
         }
         foreach (var token in tokens)
         {
