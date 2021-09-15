@@ -223,7 +223,7 @@ public class FautlyBinary : MonoBehaviour {
             Awake();
         }
     }
-    private string TwitchHelpMessage = "!{0} press screen/screen [to press on screen] !{0} start on #[pressing start button at specific time] !{0} submit llllrrrr [pressing left/right input buttons] !{0} reset [to reset your input]";
+    private string TwitchHelpMessage = "!{0} press screen/screen [to press on screen] !{0} start on # [pressing start button at specific time] !{0} submit llllrrrr [pressing left/right input buttons] !{0} reset [to reset your input]";
     private IEnumerator ProcessTwitchCommand(string command)
     {
         command = command.ToLowerInvariant().Trim();
