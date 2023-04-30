@@ -51,10 +51,10 @@ public class BrokenBinary : MonoBehaviour
     public string[] Wordlist = {
     "ABORT", "ABOUT", "ALERT", "ALPHA", "ALTER", "BLACK", "BASTE", "BEAST", "BEATS", "BLOCK", "BRAVO", "CLOCK", "CLOSE",
     "CHAIR", "CRASH", "DEALT", "DELTA", "DIGIT", "DISCO", "EIGHT", "EVENS", "GAMMA", "GENRE", "GHOST", "GIANT", "GLASS",
-    "GOTHS", "GREEN", "GUESS", "HOTEL", "HYPER", "INDIA", "KAPPA", "LATER", "LEMON", "LUCKY", "MAGMA", "MARIO", "MELON",
-    "MERIT", "MONTH", "MORSE", "NORTH", "OMEGA", "OSCAR", "PANIC", "PRESS", "PURSE", "ROMEO", "SEVEN", "SHOUT", "SIGMA",
-    "SIMON", "SMASH", "SOUTH", "STICK", "SUPER", "TANGO", "THORN", "TICKS", "TIMER", "ULTRA", "VOICE", "WHILE", "WHITE",
-    "WORLD", "WORRY", "WOULD"};
+    "GOTHS", "GREEN", "GUESS", "HOTEL", "HYPER", "INDIA", "KAPPA", "LATER", "LEMON", "LUCKY", "MAGMA", "MARIO", "MAORI",
+    "MELON", "MERIT", "MONTH", "MORSE", "NORTH", "OMEGA", "OSCAR", "PANIC", "PRESS", "PURSE", "ROMEO", "SEVEN", "SHOUT",
+    "SIGMA", "SIMON", "SMASH", "SOUTH", "STICK", "SUPER", "TANGO", "THORN", "TICKS", "TIMER", "ULTRA", "VOICE", "WHILE",
+    "WHITE", "WORLD", "WORRY", "WOULD"};
 
 
     private static int _moduleIDCounter = 1;
@@ -68,7 +68,7 @@ public class BrokenBinary : MonoBehaviour
             
             _moduleID = _moduleIDCounter++;
             awaked = true;
-            word = Wordlist[Random.Range(0, 68)];
+            word = Wordlist[Random.Range(0, 69)];
             for (int i = 0; i < 5; i++)
             {
                 char c = word[i];
@@ -299,7 +299,7 @@ public class BrokenBinary : MonoBehaviour
             c5 = false;
             stepcycle = -1;
             Slovo.text = "";
-            word = Wordlist[Random.Range(0, 68)];
+            word = Wordlist[Random.Range(0, 69)];
 
             for (int i = 0; i < 5; i++)
             {
